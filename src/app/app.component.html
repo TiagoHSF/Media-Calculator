@@ -2,7 +2,7 @@
   <span class="calc-text calc-border calc-color-base">MEDIA CALCULATOR</span>
   <input class="first-note" type="text" #note1 placeholder="FIRST NOTE">
   <input class="second-note" type="text" #note2 placeholder="SECOND NOTE">
-  <input *ngIf="invisible === false" class="third-note" type="text" placeholder="THIRD NOTE">
+  <input *ngIf="invisible === false" class="third-note" type="text" #note3 placeholder="THIRD NOTE">
   <button *ngIf="invisible === true" (click)="expand()" class="plus-option">+</button>
   <button *ngIf="invisible === false" (click)="expand()" class="plus-option">-</button>
   <input class="weight" type="text" #weight placeholder="WEIGHT">

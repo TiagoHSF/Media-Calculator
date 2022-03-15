@@ -13,6 +13,7 @@ export class AppComponent {
   sum: any;
   weight: any;
   result: any;
+  resultError: string = 'ERROR!'
 
   expand(){
    if(this.invisible === true){
@@ -26,8 +27,20 @@ export class AppComponent {
     this.note1Ready = parseInt(note1);
     this.note2Ready = parseInt(note2);
     this.weight = parseInt(weight);
-    if(note1 != null && note2 != null){
-      this.result = (this.note1Ready + this.note2Ready) / this.weight
+    if(note1 === ""){
+      alert("Please, input first note")
+        this.result = this.resultError
+    } else if(note2 === "") {
+      alert ("Please, input second note")
+        this.result = this.resultError
+    } else if(weight === "") {
+      alert ("Please, input weight")
+        this.result = this.resultError
+    }
+      if(this.result != this.resultError){
+        if(note1 != null && note2 != null){
+          this.result = (this.note1Ready + this.note2Ready) / this.weight
+      }
     }
   }
 }
