@@ -1,0 +1,108 @@
+.calc-color-base {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(114, 35, 35, 1) 35%,
+    rgb(165, 109, 109) 100%
+  );
+}
+
+.calc-text {
+  color: white;
+  font-size: 4rem;
+  font-family: monospace;
+  font-weight: bold;
+  margin-left: 10rem;
+}
+
+.calc-border {
+  border-style: solid;
+  border-width: 0.3rem;
+  padding-bottom: 37rem;
+  border-radius: 2rem;
+}
+
+input[type="text"] {
+  text-align: center;
+  width: 24rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  background-color: #404040;
+  color: white !important;
+  font-weight: bolder;
+}
+
+input[type="text"]:hover {
+  color: black;
+  background: rgb(88, 88, 88);
+  border-style: double;
+  border-radius: 2rem;
+}
+
+.first-note {
+  position: relative;
+  top: 6rem;
+  right: 30rem;
+}
+
+.second-note {
+  position: relative;
+  top: 12rem;
+  right: 54.5rem;
+}
+
+.third-note {
+  position: relative;
+  top: 18rem;
+  right: 79.2rem;
+}
+
+.btn-calc-align {
+  border-style: hidden;
+  position: relative;
+  top: 25rem;
+  width: 15rem;
+  height: 4rem;
+  right: -20rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  background: #404040;
+  border-radius: 2rem;
+}
+
+button:hover {
+  color: black;
+  background: white;
+  border-style: double;
+  border-radius: 2rem;
+}
+
+.weight {
+  position: relative;
+  top: 23rem;
+  right: 86rem;
+  width: 10rem !important;
+}
+
+.plus-option {
+  position: relative;
+  right: 83rem;
+  top: 18rem;
+  font-size: 3rem;
+  background: transparent !important;
+  border-radius: 2rem !important;
+  color: white !important;
+}
+
+.result {
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  position: relative;
+  left: 25rem;
+  top: 17rem;
+  font-size: 3rem;
+}
